@@ -9,7 +9,7 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/Logo-1.webp" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -41,7 +41,7 @@
 <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+      <a href="gallery.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Logo diubah menjadi assets/img/Logo-1.webp -->
         <img src="assets/img/Logo-1.webp" alt="Wisata Jatim" style="max-height: 40px; width: auto;">
         <!-- Teks sitename disembunyikan agar tampilan bersih -->
@@ -50,12 +50,11 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Beranda</a></li>
+          <li><a href="index.html">Beranda</a></li>
           <li><a href="about.html">Tentang Kami</a></li>
-          <li><a href="destinations.html">Destinasi</a></li>
-          <li><a href="gallery.html">Galeri</a></li>
+          <li><a href="gallery.html" class="active">Galeri</a></li>
+          <li><a href="Destination.html">paket destinasi</a></li>
           <li><a href="blog.html">Blog</a></li>
-          <li><a href="faq.html">FAQ</a></li>
           <li><a href="contact.html">Kontak</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -66,10 +65,11 @@
     </div>
 </header>
 
+
   <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/travel/showcase-7.webp);">
+    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/background.webp);">
       <div class="container position-relative">
         <h1>Galeri Wisata</h1>
         <nav class="breadcrumbs">
@@ -123,7 +123,7 @@
           <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <figure class="photo-card wide">
               <a class="glightbox" data-gallery="images-gallery" href="assets/img/travel/bromo_tour.png">
-                <img src="assets/img/travel/bromo_tour.png" class="img-fluid" alt="" loading="lazy">
+                <img src="assets/img/taman-baluran.webp" class="img-fluid" alt="" loading="lazy">
                 <div class="card-hover">
                   <span class="expand-btn"><i class="bi bi-arrows-fullscreen"></i></span>
                 </div>
@@ -134,7 +134,7 @@
           <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <figure class="photo-card wide">
               <a class="glightbox" data-gallery="images-gallery" href="assets/img/travel/klayar_beach.png">
-                <img src="assets/img/travel/klayar_beach.png" class="img-fluid" alt="" loading="lazy">
+                <img src="assets/img/airmancur.webp" class="img-fluid" alt="" loading="lazy">
                 <div class="card-hover">
                   <span class="expand-btn"><i class="bi bi-arrows-fullscreen"></i></span>
                 </div>
@@ -145,7 +145,7 @@
           <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
             <figure class="photo-card">
               <a class="glightbox" data-gallery="images-gallery" href="assets/img/travel/penataran_temple.png">
-                <img src="assets/img/travel/penataran_temple.png" class="img-fluid" alt="" loading="lazy">
+                <img src="assets/img/surabaya.webp" class="img-fluid" alt="" loading="lazy">
                 <div class="card-hover">
                   <span class="expand-btn"><i class="bi bi-arrows-fullscreen"></i></span>
                 </div>
@@ -156,7 +156,7 @@
           <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
             <figure class="photo-card">
               <a class="glightbox" data-gallery="images-gallery" href="assets/img/travel/penataran_temple.png">
-                <img src="assets/img/travel/penataran_temple.png" class="img-fluid" alt="" loading="lazy">
+                <img src="assets/img/madakaripura.webp" class="img-fluid" alt="" loading="lazy">
                 <div class="card-hover">
                   <span class="expand-btn"><i class="bi bi-arrows-fullscreen"></i></span>
                 </div>
@@ -167,7 +167,7 @@
           <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
             <figure class="photo-card">
               <a class="glightbox" data-gallery="images-gallery" href="assets/img/travel/baluran_savanna.png">
-                <img src="assets/img/travel/baluran_savanna.png" class="img-fluid" alt="" loading="lazy">
+                <img src="assets/img/santera.webp" class="img-fluid" alt="" loading="lazy">
                 <div class="card-hover">
                   <span class="expand-btn"><i class="bi bi-arrows-fullscreen"></i></span>
                 </div>
@@ -182,61 +182,62 @@
 
   </main>
 
-  <footer id="footer" class="footer dark-background">
-
-    <div class="container">
-      <div class="row gy-3">
-        <div class="col-lg-3 col-md-6 d-flex">
-          <i class="bi bi-geo-alt icon"></i>
-          <div class="address">
-            <h4>Address</h4>
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p></p>
-          </div>
-
+<footer id="footer" class="footer dark-background">
+  <div class="container">
+    <div class="row gy-3">
+      
+      <!-- Kolom 1: Alamat -->
+      <div class="col-lg-3 col-md-6 d-flex">
+        <i class="bi bi-geo-alt icon"></i>
+        <div class="address">
+          <h4>Address</h4>
+          <p>Batu, Malang</p>
+          <p>Jawa Timur, Indonesia</p>
         </div>
-
-        <div class="col-lg-3 col-md-6 d-flex">
-          <i class="bi bi-telephone icon"></i>
-          <div>
-            <h4>Contact</h4>
-            <p>
-              <strong>Telepon:</strong> <span>+1 5589 55488 55</span><br>
-              <strong>Email:</strong> <span>info@example.com</span><br>
-            </p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 d-flex">
-          <i class="bi bi-clock icon"></i>
-          <div>
-            <h4>Opening Hours</h4>
-            <p>
-              <strong>Mon-Sat:</strong> <span>11AM - 23PM</span><br>
-              <strong>Sunday</strong>: <span>Closed</span>
-            </p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <h4>Follow Us</h4>
-          <div class="social-links d-flex">
-            <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-
       </div>
-    </div>
 
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Travely</strong> <span>All Rights Reserved</span></p>
-    </div>
+      <!-- Kolom 2: Kontak -->
+      <div class="col-lg-3 col-md-6 d-flex">
+        <i class="bi bi-telephone icon"></i>
+        <div>
+          <h4>Contact</h4>
+          <p>
+            <strong>Telepon:</strong> <span>+62 812-3456-7890</span><br>
+            <strong>Email:</strong> <span>info@gemilangkatun.com</span><br>
+          </p>
+        </div>
+      </div>
 
-  </footer>
+      <!-- Kolom 3: Jam Operasional -->
+      <div class="col-lg-3 col-md-6 d-flex">
+        <i class="bi bi-clock icon"></i>
+        <div>
+          <h4>Opening Hours</h4>
+          <p>
+            <strong>Mon-Sat:</strong> <span>08:00 - 17:00</span><br>
+            <strong>Sunday:</strong> <span>Closed</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Kolom 4: Navigasi (Sesuai Navbar) -->
+      <div class="col-lg-3 col-md-6 footer-links">
+        <h4>Menu Utama</h4>
+        <ul class="list-unstyled">
+          <li><i class="bi bi-chevron-right"></i> <a href="index.html">Beranda</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="about.html">Tentang Kami</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="gallery.html">Galeri</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="blog.html">Blog</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="contact.html">Kontak</a></li>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container copyright text-center mt-4">
+    <p>© <span>Copyright</span> <strong class="px-1 sitename">Gemilang Katun Outbound</strong> <span>All Rights Reserved</span></p>
+  </div>
+</footer>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
