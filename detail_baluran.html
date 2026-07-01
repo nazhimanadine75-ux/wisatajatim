@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Detail Taman Nasional Baluran - Wisata Jawa Timur</title>
+  <meta name="description" content="Jelajahi Taman Nasional Baluran, Afrika van Java di Situbondo. Nikmati savana luas, satwa liar eksotis, dan pantai Bama yang memukau.">
+  <meta name="keywords" content="Taman Nasional Baluran, wisata Situbondo, safari Jawa Timur, savana Bekol, pantai Bama, paket wisata Baluran">
+
+  <!-- Favicons -->
+  <link href="assets/img/Logo-1.webp" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary-green: #1db954;
+      --dark-bg: #1a1a1a;
+      --card-bg: #ffffff;
+      --text-dark: #333333;
+      --text-muted: #666666;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      color: var(--text-dark);
+    }
+
+    /* ===== NAVBAR ===== */
+    .navbar-custom {
+      background-color: var(--dark-bg);
+      padding: 12px 0;
+      border-radius: 50px;
+      margin: 20px auto;
+      max-width: 1200px;
+      width: 95%;
+    }
+
+    .navbar-custom .navbar-brand img {
+      height: 40px;
+      border-radius: 8px;
+    }
+
+    .navbar-custom .nav-link {
+      color: #ffffff !important;
+      font-size: 0.95rem;
+      font-weight: 500;
+      padding: 8px 18px !important;
+      transition: color 0.3s ease;
+    }
+
+    .navbar-custom .nav-link:hover,
+    .navbar-custom .nav-link.active {
+      color: var(--primary-green) !important;
+    }
+
+    .btn-mulai {
+      background-color: var(--primary-green);
+      color: #ffffff;
+      border-radius: 25px;
+      padding: 8px 24px;
+      font-weight: 600;
+      border: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn-mulai:hover {
+      background-color: #17a34a;
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+
+    /* ===== HERO DETAIL ===== */
+    .hero-detail {
+      position: relative;
+      width: 100%;
+      height: 70vh;
+      min-height: 450px;
+      max-height: 700px;
+      overflow: hidden;
+    }
+
+    .hero-detail img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.85) 0%,
+        rgba(0,0,0,0.4) 40%,
+        rgba(0,0,0,0.1) 70%,
+        transparent 100%
+      );
+      display: flex;
+      align-items: flex-end;
+      padding: 0 0 60px 0;
+    }
+
+    .hero-content {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .hero-overlay h1 {
+      color: #ffffff;
+      font-size: 3.5rem;
+      font-weight: 700;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+      margin-bottom: 10px;
+      line-height: 1.2;
+    }
+
+    .hero-overlay p {
+      color: #e0e0e0;
+      font-size: 1.15rem;
+      max-width: 600px;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+      margin: 0;
+    }
+
+    .badge-lokasi {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background-color: var(--primary-green);
+      color: #ffffff;
+      padding: 8px 18px;
+      border-radius: 25px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+
+    /* ===== CONTENT SECTION ===== */
+    .content-section {
+      padding: 60px 0;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 25px;
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background-color: var(--primary-green);
+      border-radius: 2px;
+    }
+
+    .deskripsi-box {
+      background-color: var(--card-bg);
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      line-height: 1.8;
+      color: var(--text-muted);
+    }
+
+    .info-card {
+      background-color: var(--card-bg);
+      padding: 25px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .info-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .info-card i {
+      font-size: 2rem;
+      color: var(--primary-green);
+      margin-bottom: 12px;
+    }
+
+    .info-card h5 {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 5px;
+    }
+
+    .info-card p {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      margin: 0;
+    }
+
+    .gallery-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .gallery-img:hover {
+      transform: scale(1.03);
+    }
+
+    .cta-section {
+      background-color: var(--dark-bg);
+      padding: 60px 0;
+      border-radius: 20px;
+      margin: 40px 0;
+      text-align: center;
+    }
+
+    .cta-section h2 {
+      color: #ffffff;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .cta-section p {
+      color: #b0b0b0;
+      margin-bottom: 25px;
+    }
+
+    .btn-pesan {
+      background-color: var(--primary-green);
+      color: #ffffff;
+      padding: 12px 40px;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      border: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn-pesan:hover {
+      background-color: #17a34a;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(29, 185, 84, 0.3);
+    }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      background-color: #0f2e1f;
+      color: #a3c9b8;
+      padding-top: 60px;
+      padding-bottom: 0;
+    }
+
+    .footer h2 {
+      color: #ffffff;
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .footer h4 {
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .footer p {
+      color: #a3c9b8;
+      font-size: 0.9rem;
+      line-height: 1.7;
+      margin-bottom: 6px;
+    }
+
+    .footer strong {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    .footer a {
+      color: #a3c9b8;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer a:hover {
+      color: #ffffff;
+    }
+
+    .footer-brand {
+      padding-right: 30px;
+    }
+
+    .brand-desc {
+      color: #a3c9b8;
+      font-size: 0.9rem;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .social-icons a {
+      width: 42px;
+      height: 42px;
+      border: 1px solid #2a5a45;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #a3c9b8;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      background-color: #40916c;
+      border-color: #40916c;
+      color: #ffffff;
+    }
+
+    .footer-links ul {
+      padding: 0;
+      list-style: none;
+      margin: 0;
+    }
+
+    .footer-links li {
+      margin-bottom: 12px;
+    }
+
+    .footer-links a {
+      color: #a3c9b8;
+      font-size: 0.9rem;
+      transition: color 0.3s ease, padding-left 0.3s ease;
+      display: inline-block;
+    }
+
+    .footer-links a:hover {
+      color: #ffffff;
+      padding-left: 5px;
+    }
+
+    .copyright-wrapper {
+      background-color: #1a3d2e;
+      padding: 25px 0;
+      margin-top: 50px;
+    }
+
+    .copyright-wrapper p {
+      color: #a3c9b8;
+      margin: 0;
+      font-size: 0.85rem;
+      text-align: center;
+    }
+
+    .copyright-wrapper strong {
+      color: #ffffff;
+    }
+
+    /* ===== FLOATING BUTTONS ===== */
+    .floating-actions {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      z-index: 1000;
+    }
+
+    .whatsapp-float,
+    .back-to-top {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      text-decoration: none;
+    }
+
+    .whatsapp-float {
+      background-color: #25d366;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.08);
+    }
+
+    .whatsapp-float i {
+      color: white;
+      font-size: 1.7rem;
+    }
+
+    .back-to-top {
+      background-color: #40916c;
+    }
+
+    .back-to-top:hover {
+      transform: scale(1.08);
+      background-color: #2d6a4f;
+    }
+
+    .back-to-top i {
+      color: white;
+      font-size: 1.2rem;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 991px) {
+      .navbar-custom {
+        border-radius: 20px;
+      }
+
+      .hero-detail {
+        height: 50vh;
+        min-height: 350px;
+      }
+
+      .hero-overlay h1 {
+        font-size: 2.2rem;
+      }
+
+      .hero-overlay p {
+        font-size: 1rem;
+      }
+
+      .footer-brand {
+        padding-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .hero-detail {
+        height: 45vh;
+        min-height: 300px;
+      }
+
+      .hero-overlay h1 {
+        font-size: 1.8rem;
+      }
+
+      .hero-overlay p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/img/Logo-1.webp" alt="Wisata Jatim" height="40">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Tentang Kami</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="destinasi.html">Paket Destinasi</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Kontak</a></li>
+        </ul>
+        <a href="contact.html" class="btn btn-mulai">Mulai Sekarang</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO DETAIL ===== -->
+  <section class="hero-detail">
+    <img src="assets/img/baluran.webp" alt="Taman Nasional Baluran">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <span class="badge-lokasi"><i class="bi bi-geo-alt-fill"></i> Situbondo, Jawa Timur</span>
+        <h1>Taman Nasional Baluran</h1>
+        <p>Dijuluki "Afrika van Java" dengan sabana luas dan satwa liar eksotis.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTENT ===== -->
+  <section class="content-section">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Kolom Kiri: Deskripsi & Galeri -->
+        <div class="col-lg-8">
+          <h3 class="section-title">Tentang Taman Nasional Baluran</h3>
+          <div class="deskripsi-box">
+            <p>Taman Nasional Baluran adalah salah satu taman nasional tertua di Indonesia yang terletak di ujung timur Pulau Jawa, tepatnya di Kabupaten Situbondo. Taman nasional ini memiliki luas sekitar 25.000 hektar dan dikenal dengan julukan "Afrika van Java" karena memiliki ekosistem sabana yang luas dan kering mirip dengan padang savana di Afrika.</p>
+            <p class="mt-3">Keindahan utama Taman Nasional Baluran terletak pada padang savana Bekol yang membentang luas dengan latar belakang Gunung Baluran. Di sini, pengunjung dapat menyaksikan berbagai satwa liar seperti banteng, rusa, babi hutan, kancil, kijang, dan berbagai jenis burung dalam habitat alaminya. Pemandangan satwa liar yang berkeliaran bebas di padang rumput yang kering menciptakan sensasi seolah-olah berada di benua Afrika.</p>
+            <p class="mt-3">Selain savana, Taman Nasional Baluran juga memiliki pantai Bama yang indah dengan air laut yang jernih dan terumbu karang yang masih terjaga kelestariannya. Pengunjung dapat snorkeling, berenang, atau sekadar menikmati keindahan pantai yang tenang.</p>
+          </div>
+
+          <!-- Galeri Foto -->
+          <h3 class="section-title mt-5">Galeri Foto</h3>
+          <div class="row g-3">
+            <div class="col-md-4">
+              <img src="assets/img/baluran-2.webp" class="gallery-img" alt="Satwa Liar Baluran">
+            </div>
+            <div class="col-md-4">
+              <img src="assets/img/baluran.webp" class="gallery-img" alt="Pemandangan Baluran">
+            </div>
+            <div class="col-md-4">
+              <img src="assets/img/taman-baluran.webp" class="gallery-img" alt="Taman Nasional Baluran">
+            </div>
+          </div>
+        </div>
+
+        <!-- Kolom Kanan: Informasi & CTA -->
+        <div class="col-lg-4">
+          <h3 class="section-title">Informasi Wisata</h3>
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="info-card">
+                <i class="bi bi-geo-alt"></i>
+                <h5>Lokasi</h5>
+                <p>Situbondo</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="info-card">
+                <i class="bi bi-rulers"></i>
+                <h5>Luas Area</h5>
+                <p>25.000 Ha</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="info-card">
+                <i class="bi bi-clock"></i>
+                <h5>Waktu Terbaik</h5>
+                <p>Juni - November</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="info-card">
+                <i class="bi bi-ticket"></i>
+                <h5>Harga Tiket</h5>
+                <p>Rp 25.000</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="info-card">
+                <i class="bi bi-binoculars"></i>
+                <h5>Aktivitas</h5>
+                <p>Safari & Snorkeling</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="info-card">
+                <i class="bi bi-star-fill"></i>
+                <h5>Rating</h5>
+                <p>4.7/5.0</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA Pesan -->
+          <div class="cta-section mt-4">
+            <h2>Tertarik?</h2>
+            <p>Pesan paket wisata Taman Nasional Baluran sekarang dan rasakan sensasi safari di Jawa!</p>
+            <a href="https://wa.me/6281234567890" class="btn btn-pesan" target="_blank">
+              <i class="bi bi-whatsapp"></i> Pesan Sekarang
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+ <footer id="footer" class="footer">
+  <div class="container">
+    <div class="row gy-4">
+      
+      <!-- Kolom 1: Brand + Deskripsi + Sosial Media -->
+      <div class="col-lg-4 col-md-6 footer-brand">
+        <h2>Gemilang Katun Outbound</h2>
+        <p class="brand-desc">
+          Solusi terpercaya untuk kebutuhan wisata outbound Anda. Menyediakan layanan wisata terbaik di Jawa Timur secara aman, transparan, dan profesional.
+        </p>
+        <div class="social-icons">
+          <a href="#" title="Twitter/X"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" title="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" title="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+      <!-- Kolom 2: Menu Utama -->
+      <div class="col-lg-2 col-md-6 footer-links">
+        <h4>Menu Utama</h4>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li><a href="gallery.html">Galeri</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+      </div>
+
+      <!-- Kolom 3: Layanan Kami -->
+      <div class="col-lg-3 col-md-6 footer-links">
+        <h4>Paket Destinasi</h4>
+        <ul>
+          <li><a href="detail_bromo.html">Gunung Bromo</a></li>
+          <li><a href="detail_ijen.html">Kawah Ijen</a></li>
+          <li><a href="detail_baluran.html">Taman Nasional Baluran</a></li>
+        </ul>
+      </div>
+
+      <!-- Kolom 4: Hubungi Kami -->
+      <div class="col-lg-3 col-md-6 footer-contact">
+        <h4>Hubungi Kami</h4>
+        <p>Batu, Malang</p>
+        <p>Jawa Timur, Indonesia</p>
+        <p style="margin-top: 15px;">
+          <strong>Telepon:</strong> +62 812-3456-7890
+        </p>
+        <p>
+          <strong>Email:</strong> info@gemilangkatun.com
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="copyright-wrapper">
+    <div class="container">
+      <p>© <span>Copyright</span> <strong class="px-1">Gemilang Katun Outbound</strong> <span>All Rights Reserved</span></p>
+    </div>
+  </div>
+</footer>
+
+  <!-- ===== FLOATING BUTTONS ===== -->
+  <div class="floating-actions">
+    <a href="https://wa.me/6281234567890" class="whatsapp-float" target="_blank" aria-label="Chat WhatsApp">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <a href="#" class="back-to-top" aria-label="Kembali ke Atas">
+      <i class="bi bi-arrow-up"></i>
+    </a>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
